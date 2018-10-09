@@ -1,148 +1,63 @@
-# Требования к проекту
+# Requirements Document
 ---
-# Содержание
 
-# 1 Введение
+# 1 Introduction
 
-## 1.1 Назначение
+ This document describes the functional and non-functional requirements for the "ClientMapping" application for the Android platform, which will allow users who have their own customer base to save time when working with client data. The database may contain the following information about customers: name, surname, address and telephone number. Also, this application will allow to travel to customers' users through interaction with the Google Maps service. Also this application will make possible showing user and customers location by means of interaction with the Google Maps service.
 
- В этом документе описаны функциональные и нефункциональные требования к веб-приложению «Task Planner». Этот сервис позволит вам организовывать задачи в удобной форме и управлять целыми проектами.
+## 2  User Requirements
 
-## 1.2 Бизнес-требования
+### 2.1 Software Interfaces
 
+The application will be written in Java using the Android Studio integrated development environment (IDE) to work with the Android platform and will interact with the Google Maps service.
 
-### 1.2.1 Исходные данные
+### 2.2 User Interfaces
 
-В последнее время темп жизни настолько увеличился, что удержать все в голове практически невозможно. Помните то гнетущее чувство, когда вы забыли о чем-то важном? TaskPlanner позволяет отслеживать все задачи в одном месте, чтобы вам было проще выполнять задуманное.
+When you start the application, you will be asked to register or log in to your account if the user has previously been registered. Then it is possible to add new customers to the database, delete irrelevant customers, change customer data and go to Google Maps with the ability to enter the customer address.
 
+- User Authorization Screen
+  ![](Mockups/Registration screen.png)
+- Client Database management Screen
+  ![](Mockups/Database menu.png)
+- Adding new customer screen
+  ![](Mockups/Adding client.png)
+- Screen of redirecting to Google Maps service with display of a current location and client address
+  ![](Mockups/Map function.png)
 
-### 1.2.2 Возможности бизнеса
+### 2.3 User Characteristics
 
+The target audience is individual entrepreneurs and companies that work with the client base (including using the location of their clients) and want to structure and organize their work in the most convenient way.
 
-## 1.3 Аналоги
-   Task Planner - это в первую очередь простая и удобная программа-планировщик для эффективного управления вашими задачами.
-- https://www.wunderlist.com/ru/
-  - Плюсы:
-Организация различных списков (покупок, фильмов, книг).
-Списки можно группировать.
-Наличие дедлайнов.
-Списками можно меняться.
-Кроссплатформенный.
-Совместная работа над задачами (в про-версии).
-  - Минусы: 
-Несколько перегружен и приставуч
+## 2.4 Assumptions and Dependencies
 
-Подойдет людям с большим кругом общения, хорош для совместного планирования чего-либо.
+Older Android versions may not support this application. Also without an Internet connection, users will be limited in their actions due to the application uses Goodle Maps to download maps and determine the current location.
 
-- https://to-round.com
-  - Плюсы:
-Приятный дизайн.
-Геймификация.
-Задание приоритета.
-Прост в использовании.
-Крутая визуализация.
-Бесплатный.
+# 3 System Requirements
 
-  - Минусы
-Только для личного использования
+To run the application, you need a mobile device with Android operating system version 4.0 and higher.
 
-Подойдет креативным и творческим людям, присутствуют элементы геймификации.
+## 3.1 Functional Requirements
 
-- https://www.any.do
-  - Плюсы:
-Наличие подзадач.
-Запоминает пропущенные звонки и предлагает создать задачу.
-Кроссплатформенный.
-Оффлайн-режим.
-Совместная работа над задачами.
-Настройка повторяющихся задач.
-
-  - Минусы
-Жесткий минимализм, приходится самому разбираться что там к чему.
-
-Подойдет людям с иерархическим типом мышления.
-
-- https://todoist.com
-  - Плюсы:
-Есть приоритеты для задач.
-Отслеживание собственной продуктивности.
-Хорошее юзабилити.
-Кроссплатформенный.
-Совместная работа над задачами.
-Есть подпроекты и подзадачи.
-
-  - Минусы
-Все основные возможности в платной версии.
-
-## Требования пользователя
-
-### Программные интерфейсы
-
-- Должна быть возможность отображения списка задач в браузере.
-
-### Интерфейс пользователя
+|Functions| Requirements |
+|--|--|
+|User registration| The application must request a login and password to register a new user 
+|User initialization|The application provides the ability to log in after checking user data for correctness
+| Add clients to the database|Applications allows each user to create a client database and add new ones
+Search customers in the database|The application allows you to search for customers based on existing information
+Change client's data|The application allows you to change client's data using search function
+|  Remove from base| The application allows you to remove irrelevant clients from the database
+| Redirecting to Google Maps servis| The application allows you to interact with the Google Maps service. When you click on the appropriate button, the application will redirect the user to the service, put a label at its current location, and the client’s address will appear in a pop-up window
 
 
-### Характеристики пользователей
+## 3.2 Non-Functional Requirements
 
 
-### 2.3.1 Классы пользователей
+### 3.2.1 Software quality attributes
 
-Task Planner хорошо подойдет для широкой аудитории, в т.ч.:
+-   **Security**. This is an android application, and its data is stored in a database on the phone. These data can be obtained only by hacking or by picking up the phone.
+-    **Reliability**. It is necessary to provide for user error handling. The user will be limited in their actions. When initializing a user, it is necessary to provide for a validation of the entered data. Also, in case of emergency situations in the system, all data that has been added to the database will be saved.
+-  **Usability**. Font size must be at least 14pt. The functional elements are contrasting with the window background.
 
-- Руководителей
-- Менеджеров
-- Студентов
-
-### 2.3.2 Аудитория приложения
-
-
-#### 2.3.2.1 Целевая аудитория
-
- Люди со средним или выше среднего уровнем образования,например, руководители компаний, преподаватели, менеджеры, обладающие минимальной технической грамотностью.
-
-
-## 2.4 Предположения и зависимости
-1. Приложение не работает при отсутствии подключения к Интернету;
-
-
-# 3 Системные требования
-
-
-## 3.1 Функциональные требования
-
-
-### 3.1.1 Основные функции
-
-- Составление списка задач на любой день
-- Простой редактор задач
-- Организация работы с проектами
-- Разделение задач на категории
-
-
-### 3.1.2 Ограничения и исключения
-1. Приложение работает только при наличии подключения к Интернету;
-
-
-## 3.2 Нефункциональные требования
-
-
-### 3.2.1 Атрибуты качества
-
-
-#### 3.2.1.1 Требования к удобству использования
-1. Все элементы должны быть контрастными и в светлой гамме;
-2. Все функциональные элементы пользовательского интерфейса имеют названия, описывающие действие, которое произойдет при выборе элемента;
-
-
-#### 3.2.1.2 Требования к безопасности
-Приложение предоставляет возможность рендеринга и сохранения диаграммы только после активации администратором данного аккуаунта.
-
-
-### 3.2.2 Внешние интерфейсы
-Окна приложения удобны для использования пользователями с :
-  * размер шрифта не менее 14пт;
-  * функциональные элементы контрастны фону окна.
-
-
-### 3.2.3 Ограничения
+### 3.2.2 Limitations and Exceptions
+1. The application was developed to work with the Android platform;
+2. User profile is stored locally in the database.
