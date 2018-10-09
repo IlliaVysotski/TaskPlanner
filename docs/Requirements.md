@@ -16,13 +16,13 @@ The application will be written in Java using the Android Studio integrated deve
 When you start the application, you will be asked to register or log in to your account if the user has previously been registered. Then it is possible to add new customers to the database, delete irrelevant customers, change customer data and go to Google Maps with the ability to enter the customer address.
 
 - User Authorization Screen
-  ![](Mockups/Registration screen.png)
+  ![](https://github.com/IlliaVysotski/TaskPlanner/blob/master/docs/Mockups/Registration%20screen.png)
 - Client Database management Screen
-  ![](Mockups/Database menu.png)
+  ![](https://github.com/IlliaVysotski/TaskPlanner/blob/master/docs/Mockups/Database%20menu.png)
 - Adding new customer screen
-  ![](Mockups/Adding client.png)
+  ![](https://github.com/IlliaVysotski/TaskPlanner/blob/master/docs/Mockups/Adding%20client.png)
 - Screen of redirecting to Google Maps service with display of a current location and client address
-  ![](Mockups/Map function.png)
+  ![](https://github.com/IlliaVysotski/TaskPlanner/blob/master/docs/Mockups/Map%20function.png)
 
 ### 2.3 User Characteristics
 
