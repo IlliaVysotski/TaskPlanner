@@ -66,5 +66,5 @@ Change client's data|The application allows you to change client's data using se
 -  **Usability**. Font size must be at least 14pt. The functional elements are contrasting with the window background.
 
 ### 3.2.2 Limitations and Exceptions
-1. The application was developed to work with the Android platform;
+1. The application will be developed to work with the Android platform;
 2. User profile is stored locally in the database.
