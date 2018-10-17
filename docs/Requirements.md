@@ -33,6 +33,14 @@ When you start the application, you will be asked to register or log in to your 
 
 ### 2.3 User Characteristics
 
+### 2.3.1 User classes
+
+| User class | Description |
+|:---|:---|
+| Anonymous users | Users who have not completed the registration form in the application. Do not have access to the functionality |
+| Registered Users | Users who entered the application under their personal data (login and password). Have full access to the functionality |
+
+### 2.3.2 Target audience
 The target audience is individual entrepreneurs and companies that work with the client base (including using the location of their clients) and want to structure and organize their work in the most convenient way.
 
 ## 2.4 Assumptions and Dependencies
