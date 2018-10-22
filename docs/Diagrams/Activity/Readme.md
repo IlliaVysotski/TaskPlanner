@@ -15,14 +15,14 @@
 <a name="login"/>
 
 # 2 Войти в систему
-![Войти в учётную запись](SignIn(activity).png)
+![Войти в систему](SignIn(activity).png)
 
 <a name="find"/>
 
 # 3 Найти клиента
-![Рендеринг диаграммы](FindClient(activity).png)
+![Найти клиента](FindClient(activity).png)
 
 <a name="add"/>
 
 # 4 Добавить клиента
-![Настройка прав пользователей](AddClient(activity).png)
+![Добавить клиента](AddClient(activity).png)
