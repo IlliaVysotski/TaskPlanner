@@ -10,7 +10,7 @@
 <a name="reg"/>
 
 # 1 Зарегистрироваться
-![Зарегистрироваться](SignUp(activity).png)
+![Зарегистрироваться](SignUp(activity).PNG)
 
 <a name="login"/>
 
@@ -20,9 +20,9 @@
 <a name="find"/>
 
 # 3 Найти клиента
-![Найти клиента](FindClient(activity).png)
+![Найти клиента](FindClient(activity).PNG)
 
 <a name="add"/>
 
 # 4 Добавить клиента
-![Добавить клиента](AddClient(activity).png)
+![Добавить клиента](AddClient(activity).PNG)
