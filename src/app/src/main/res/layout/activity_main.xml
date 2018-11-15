@@ -1,18 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignStart="@+id/wrongSearch"
+        android:layout_alignLeft="@+id/wrongSearch"
+        android:layout_alignBottom="@+id/btnMap"
+        android:layout_alignBaseline="@+id/btnMap"
+        android:text="Delete"
+        android:id="@+id/btnDel"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignStart="@+id/wrongSearch"
+        android:layout_alignLeft="@+id/wrongSearch"
+        android:text="Search"
+        android:id="@+id/searchText"
+        android:layout_alignTop="@+id/spinner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:layout_height="30dp"
+        android:layout_width="200dp"
+        android:id="@+id/spinner"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints"
+        android:entries="array/spinnerList"
+        android:layout_toRightOf="@+id/searchText"
+        android:layout_toEndOf="@+id/searchText"
+        android:layout_marginTop="104dp"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:layout_height="50dp"
+        android:layout_width="270dp"
+        android:id="@+id/etTextFind"
+        android:layout_marginTop="22dp"
+        android:hint="Lastname Firstname"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spinner"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignStart="@+id/btnDel"
+        android:layout_alignLeft="@+id/btnDel"
+        android:text="Add"
+        android:id="@+id/btnAdd"
+        android:layout_alignTop="@+id/btnFind"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Find"
+        android:id="@+id/btnFind"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/etTextFind"
+        android:layout_alignEnd="@+id/etTextFind"/>
+
+    <TextView
+        android:layout_height="30dp"
+        android:layout_width="270dp"
+        android:id="@+id/wrongSearch"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="29dp"
+        android:textColor="#e9ef2626"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="to Map"
+        android:id="@+id/btnMap"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/btnAdd"
+        android:layout_alignRight="@+id/wrongSearch"
+        android:layout_alignEnd="@+id/wrongSearch"/>
+
+</RelativeLayout>
