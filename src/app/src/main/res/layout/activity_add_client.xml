@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ru.startandroid.p0030_firstproject.AddClientActivity">
+    tools:context=".AddClientActivity">
 
     <EditText
         android:id="@+id/etFirstName"
