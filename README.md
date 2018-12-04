@@ -3,3 +3,5 @@ ClientMapping - application for the Android platform, which allows users who hav
 
 [Requirements Document](https://github.com/IlliaVysotski/ClientMapping/blob/master/docs/Requirements.md)  
 [UML Diagrams](https://github.com/IlliaVysotski/ClientMapping/tree/master/docs/Diagrams)
+[Test Plan](https://github.com/IlliaVysotski/ClientMapping/blob/master/test/TestPlan.md)
+[Test Results](https://github.com/IlliaVysotski/ClientMapping/blob/master/test/TestResults.md)
